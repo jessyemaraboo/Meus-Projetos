@@ -27,16 +27,16 @@ fieldset#gender{
   width: 240px;
 }
 fieldset#user-data{
-  background: url("/projeto-glass-html5/_imagens/icone-contato.png") no-repeat 105% 100%;
+  background: url("/Meus-Projetos/Projeto-GoogleGlass/projeto-glass-html5/_imagens/icone-contato.png") no-repeat 105% 100%;
 }
 fieldset#address-data{
-  background: url("/projeto-glass-html5/_imagens/icone-endereco.png") no-repeat 105% 100% ;
+  background: url("/Meus-Projetos/Projeto-GoogleGlass/projeto-glass-html5/_imagens/icone-endereco.png") no-repeat 105% 100% ;
 }
 fieldset#message-data{
-  background: url("/projeto-glass-html5/_imagens/icone-mensagem.png") no-repeat 105% 100%;
+  background: url("/Meus-Projetos/Projeto-GoogleGlass/projeto-glass-html5/_imagens/icone-mensagem.png") no-repeat 105% 100%;
 }
 fieldset#order-data{
-  background: url("/projeto-glass-html5/_imagens/icone-pagamento.png") no-repeat 105% 100% ;
+  background: url("/Meus-Projetos/Projeto-GoogleGlass/projeto-glass-html5/_imagens/icone-pagamento.png") no-repeat 105% 100% ;
 }
 input#formBTN{
   width: 100px;

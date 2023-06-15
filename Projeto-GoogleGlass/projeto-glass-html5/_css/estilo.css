@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @font-face{
   font-family: 'LogoFont';
-  src: url(/projeto-glass-html5/_fonts/computer-font.ttf);
+  src: url(/Meus-Projetos/Projeto-GoogleGlass/projeto-glass-html5/_fonts/computer-font.ttf);
 }
 @font-face{
   font-family: 'Font-2';
-  src: url(/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf);
+  src: url(/Meus-Projetos/Projeto-GoogleGlass/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf);
 }
 
 body{
@@ -143,7 +143,7 @@ header#header1 img#icon{
 header#header1{
   border-bottom: 1px #606060 solid;
   height: 150px;
-  background: url(/projeto-glass-html5/_imagens/glass-logo-peq.jpg)no-repeat 0px 80px;
+  background: url(/Meus-Projetos/Projeto-GoogleGlass/projeto-glass-html5/_imagens/glass-logo-peq.jpg)no-repeat 0px 80px;
   
 }
 header#header1 h1{
