@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+  font-family: 'LogoFont';
+  src: url(/projeto-glass-html5/_fonts/computer-font.ttf);
+}
+@font-face{
+  font-family: 'Font-2';
+  src: url(/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf);
+}
+
+body{
+  background-color: #dddddd;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+a{
+  color: #606060;
+  text-decoration: none;
+}
+a:hover{
+  font-style: italic;
+  font-weight: bold;
+}
+div#interface{
+  width: 800px;
+  background-color: #ffffff;
+  padding: 50px;
+  margin: -20px auto 0px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .5) ;
+}
+p{
+  text-align: justify;
+  text-indent: 50px;
+}
+figure.imgfgv{
+  position: relative;
+  border: 8px solid white;
+  box-shadow: 1px 1px 4px black;
+}
+figure.imgfgv img{
+  width: 100%;
+  height: 100%;
+}
+figure.imgfgv figcaption{
+ position: absolute;
+ top: 0%;
+ background-color: rgba(0, 0, 0, .4);
+ color:white;
+ width: 100%;
+ height: 100%;
+ padding: 10px;
+ box-sizing: border-box;
+ opacity: 0;
+ transition: opacity 1s;
+}
+figure.imgfgv:hover figcaption{
+  opacity: 1;
+}
+nav#menu{
+  display: block;
+  
+}
+nav#menu ul{
+  list-style: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: -18px;
+  left: 350px;
+  
+}
+nav#menu li{
+  display: inline-block;
+  background-color: #dddddd;
+  padding: 10px;
+  margin: 2px;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -o-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  transition: background-color 1s;
+}
+nav#menu li:hover{
+  background-color: #606060;
+}
+
+nav#menu h1{
+  display: none;
+}
+nav#menu a{
+  color: black;
+  text-decoration: none;
+}
+nav#menu a:hover{
+  color: #ffffff;
+}
+section#bodY{
+  display: block;
+  width: 460px;
+  float: left;
+  border-right: 1px solid #606060;
+  padding-right:15px;
+}
+aside#aside1{
+  display: block;
+  width: 300px;
+  float: right;
+  background-color: #cecece;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+  
+}
+aside#aside1 h1{
+  font-family: 'Font-2', sans-serif;
+  color: #606060;
+  font-size: 20pt;
+  margin-top: 0px;
+}
+
+aside#aside1 h2{
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #606060;
+  color: #fdfbfb;
+  font-size: 13pt;
+  padding: 0px 0px 0px 10px;
+}
+
+footer#foot{
+  clear: both;
+  border-top: 1px solid #606060;
+}
+footer#foot p{
+  text-align: center;
+}
+
+header#header1 img#icon{
+  position: relative;
+  left: 660px;
+  top: -110px;
+  width: 165px;
+}
+
+header#header1{
+  border-bottom: 1px #606060 solid;
+  height: 150px;
+  background: url(/projeto-glass-html5/_imagens/glass-logo-peq.jpg)no-repeat 0px 80px;
+  
+}
+header#header1 h1{
+  font-family: 'LogoFont';
+  font-size: 30pt;
+  color: #606060;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+  padding: 0px;
+  margin-bottom: 0px;
+  }
+  header#header1 h2{
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+  }
+table#tableEsp{
+  border: 1px solid #606060;
+  border-spacing: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+table#tableEsp td{
+  border: 1px solid #606060;
+  padding: 5px;
+  text-align: left;
+  vertical-align: sub;
+  background-color: #cecece;
+  
+}
+table#tableEsp td.colA{
+  text-align: right;
+  background-color: #606060;
+  color: white;
+  font-weight: bold;
+}
+table#tableEsp caption{
+  color: #888888;
+  font-size: 13pt;
+  font-weight: bolder;
+
+}
+table#tableEsp caption span{
+  display: block;
+  float: right;
+  font-size: 9pt;
+  color: #090909;
+  margin-top: 10px;
+}
+article#main-artic h2{
+  font-size: 12pt;
+  color: #606060;
+  background-color: #dddddd;
+  padding: 5px 0px 5px 10px;
+  margin: 10px 0px 10px 0px;
+}
+.right{
+  text-align: right;
+}
+header#header-artic h1{
+  font-family: 'Font-2';
+  font-size: 20pt;
+  color: #606060;
+  margin-bottom: 0px;
+}
+header#header-artic h2{
+  background:none;
+  color: #cecece;
+  margin-top: -10px;
+  padding-left: 0px;
+}
+header#header-artic h3{
+  font-size: 8pt;
+  color: #888888;
+}
+video#films1{
+width: 465px;
+margin-bottom: 5px;
+
+}
+video#films2{
+  width: 300px;
+}

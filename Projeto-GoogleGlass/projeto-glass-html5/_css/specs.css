@@ -1,0 +1,10 @@
+section#content{
+  width: 1000px;
+  margin: auto;
+
+}
+iframe#frame-specs {
+  width: 340px;
+  height: 300px;
+  border: none;
+}

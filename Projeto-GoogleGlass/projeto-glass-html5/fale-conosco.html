@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/projeto-glass-html5/_css/estilo.css">
+  <link rel="stylesheet" type="text/css" href="/projeto-glass-html5/_css/form.css">
+  <title>TUDO SOBRE O GOOGLE GLASS</title>
+</head>
+<script src="/projeto-glass-html5/_javascript/funcoes.js"></script>
+<script>
+  function calc_Total(){
+    var qty = parseInt(document.getElementById('orderqnt-dt').value);
+    tot = qty * 1500;
+    document.getElementById('orderPrice-dt').value = tot;
+  }
+</script>
+<body>
+  <div id="interface">
+    <header id="header1">
+      <hgroup>
+      <h1>Google Glass</h1>
+      <h2>A revolução do Google está chegando</h2>
+      </hgroup>
+  
+  <img id="icon" src="/projeto-glass-html5/_imagens/glass-oculos-preto-peq.png">
+  
+    <nav id="menu">
+  <h1>Menu Principal</h1>
+  <ul type="a">
+  <li onmouseover="photoSwitch('/projeto-glass-html5/_imagens/home.png')" onmouseout="photoSwitch('/projeto-glass-html5/_imagens/contato.png')"><a href="/projeto-glass-html5/index.html" target="_self">Home</a></li>
+  <li onmouseover="photoSwitch('/projeto-glass-html5/_imagens/especificacoes.png')" onmouseout="photoSwitch('/projeto-glass-html5/_imagens/contato.png')"><a href="/projeto-glass-html5/specs.html" target="_self">Especificações</a></li>
+  <li onmouseover="photoSwitch('/projeto-glass-html5/_imagens/fotos.png')" onmouseout="photoSwitch('/projeto-glass-html5/_imagens/contato.png')"><a href="/projeto-glass-html5/fotos.html" target="_self" >Fotos</a></li>
+  <li onmouseover="photoSwitch('/projeto-glass-html5/_imagens/multimidia.png')" onmouseout="photoSwitch('/projeto-glass-html5/_imagens/contato.png')"><a href="/projeto-glass-html5/multimidia.html" target="_self">Multimídia</a></li>
+  <li onmouseover="photoSwitch('/projeto-glass-html5/_imagens/contato.png')" onmouseout="photoSwitch('/projeto-glass-html5/_imagens/contato.png')"><a href="/projeto-glass-html5/fale-conosco.html" target="_self">Fale conosco</a></li>
+  </ul>
+  </nav>
+    </header>
+    <section id="full-body">
+      <article id="main-artic">
+      <header id="header-artic">
+      <hgroup>
+      <h3>Fale Conosco > Contato</h3>
+      <h1>Formulário de Contato</h1>
+      <h2>por Jessyane Oliveira</h2>
+      <h3 class="right">Atualizado em 05/Abril/2023 por MarabooJ</h3>
+      </hgroup>
+      </header>
+    
+
+<form method="post" id="fContact" action="mailto:jessyemaraboo@gmail.com" oninput="calc_Total();">
+
+ <fieldset id="user-data"><legend>Identificação do Usuário</legend>
+    <p><label for="name-dt">Nome:</label> <input type="text" name="name-dt" id="name-dt" size="40" maxlength="30"placeholder="Nome Completo"></p>
+   <p> <label for="pass-dt">Senha:</label> <input type="password" name="pass-dt" id="pass-dt" placeholder="Digite sua senha" size="40" ></p>
+    <p><label for="email-dt">E-mail:</label> <input type="email" name="email-dt"  id="email-dt" size="40" placeholder="Digite seu e-mail"></p>
+
+  <fieldset id="gender"><legend>Gênero</legend>
+    <input type="radio" name="gndr-op" id="fem-op" checked> <label for="fem-op">Feminino</label>
+  </br>
+    <input type="radio" name="gndr-op" id="masc-op"> <label for="masc-op">Masculino</label>
+    </fieldset>
+    <p>Data de Nascimento: <input type="date" id="birth-data" name="birth-data"></p>
+  </fieldset>
+
+    <fieldset id="address-data"><legend> Endereço do Usuário</legend>
+    <p><label for="log-dt">Logradouro:</label> <input name="log-dt" id="log-dt" type="text" size="40" maxlength="80" placeholder="Rua, Av, Trav..."></p>
+    <p><label for="nmbr-dt">Número:</label> <input id="nmbr-dt" name="nmbr-dt" type="number" min="0" max="1999" placeholder="número" ></p>
+    <p><label for>Estado:</label>
+    <select name="Pick-state" id="Pick-state">
+      <option value="nth"></option>
+      <optgroup label="Região Centro-Oeste">
+        <option value="DF">DISTRITO FEDERAL</option>
+        <option value="MS"> MATO GROSSO DO SUL</option>
+      </optgroup>
+    
+      <optgroup label="Região Nordeste">
+      <option value="PA">PARÁ</option>
+      <option value="PI">PIAUÍ</option>
+      <option value="AL">ALAGOAS</option>
+      <option value="PE">PERNAMBUCO</option>
+      <option value="MG">MINAS GERAIS</option>
+      <option value="MA">MARANHÃO</option>
+      <option value="BA">BAHIA</option>
+      <option value="CE">CEARÁ</option>
+      </optgroup>
+    </select></p>
+
+    <p><label for="city-dt">Cidade:</label> <input name="city-dt" id="city-dt" type="text" size="20" maxlength="40" placeholder="Nome da sua cidade" list="cities//"></p>
+  
+    </fieldset>
+
+    <fieldset id="message-data"><legend>Mensagem do Usuário</legend>
+    <p><label for="urg-dt">Grau de Urgência:</label> <input name=urg-dt" id="urg-dt" type="range" size="20" min="0" max="10" step="2"></p>
+    <p><label for="txtA-dt">Mensagem:</label> <textarea name="txtA-dt" id="txtA-dt" cols="30" rows="5" placeholder="Escreva sua mensagem aqui" ></textarea></p>
+    </fieldset>
+
+    <fieldset id="order-data"><label>Quero um Google Glass</label>
+
+    <p> <input name="order-dt" id="order-dt" type="checkbox" checked> <label for="order-dt">Gostaria de adquirir um Google Glass quando disponível</label></p>
+
+    <p><label for="ordercolor-dt">Cor</label> <input name="ordercolor-dt" id="ordercolor-dt" type="color" value="#6000ff"></p>
+
+    <p><label for="orderqnt-dt">Quantidade:</label> <input name="orderqnt-dt" id="orderqnt-dt" type="number" size="20" min="0" max="10" value="0"> </p>
+
+    <p><label for="">Preço Total: R$</label> <input type="text" name="orderPrice-td" id="orderPrice-dt" placeholder="Valor total" readonly></p>
+  </fieldset>
+
+<input name="formBTN" id="formBTN" type="image" src="/projeto-glass-html5/_imagens/botao-enviar.png">
+</form>
+
+<footer id="foot">
+    <p>Copyright 2013 - by Gustavo Guanabara </br>
+    <a href="http://facebook.com/jessyanesantosk" target="_blank">Facebook </a>| <a href="http://twitter.com/kjcblinkz" target="_blank">Twitter</a></p>
+    </footer>
+    </div>
+</body>
+</html>

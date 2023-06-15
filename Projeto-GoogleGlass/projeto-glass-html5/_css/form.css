@@ -1,0 +1,46 @@
+form{
+  width: 580px;
+  margin: auto;
+}
+input, textarea, select{
+  font-family: 'Georgia', Times New Roman, Times, serif;
+  font-weight: normal;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 5px;
+  height: 25px;
+}
+input:hover, textarea:hover{
+  background-color: #dddddd;
+}
+legend{
+  color:#888888;
+  font-weight: bold;
+  font-size: 13pt;
+  font-family: sans-serif;
+}
+fieldset{
+  border-color: #cecece;
+  margin: 20px;
+}
+fieldset#gender{
+  width: 240px;
+}
+fieldset#user-data{
+  background: url("/projeto-glass-html5/_imagens/icone-contato.png") no-repeat 105% 100%;
+}
+fieldset#address-data{
+  background: url("/projeto-glass-html5/_imagens/icone-endereco.png") no-repeat 105% 100% ;
+}
+fieldset#message-data{
+  background: url("/projeto-glass-html5/_imagens/icone-mensagem.png") no-repeat 105% 100%;
+}
+fieldset#order-data{
+  background: url("/projeto-glass-html5/_imagens/icone-pagamento.png") no-repeat 105% 100% ;
+}
+input#formBTN{
+  width: 100px;
+  height: 60px;
+  margin-left: 230px;
+  margin-right: 230px;
+}
